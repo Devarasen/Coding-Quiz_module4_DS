@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: lightblue;
+    background-color: #add8e6;
     color: black;
     padding: 20px;
     border-bottom: 3px solid black;
@@ -14,7 +14,7 @@ header {
 }
 
 body {
-    background-color: rgb(211, 211, 236);
+    background-color: #d3d3ec;
     font-family: monospace;
 }
 
