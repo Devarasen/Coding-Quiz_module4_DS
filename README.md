@@ -1,7 +1,3 @@
-# Coding-Quiz_module4_DS
-Coding Quiz Module 4 Assignment - Devarasen Sundarasan
-
-
 # Coding Quiz
 
 ## Description
@@ -17,9 +13,9 @@ Repo URL: https://github.com/Devarasen/Coding-Quiz_module4_DS
 
 Follow instructions:
 
-a. Click start quiz and question will appear.
+a. Click start quiz button and questions will be rendered.
 
-b. Answer question and the next question will be presented. A total of 7 questions will be presented.
+b. Answer question and the next question will be presented. A total of 8 questions will be presented.
 
 c. Answer all questions within the time limit of 60 seconds. 10 seconds will be deducted from the timer for every wrong answer.
 
@@ -28,7 +24,10 @@ d. At the end of the quiz, you will be given the option to save your high score.
 e. You can review the high score from the main page.
 
 
-![alt text](assets/images/screenshot.png)
+![HomePage](./assets/MainPage.PNG)
+
+
+![HighScorePage](./assets/HighScorePage.PNG)
 
 ## Credits
 
