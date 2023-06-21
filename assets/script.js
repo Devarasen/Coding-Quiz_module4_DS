@@ -144,8 +144,7 @@ function displayQuestion() {
     optionsEl.removeEventListener("click", answerButtonClick);
     
     optionsEl.addEventListener("click", answerButtonClick);
-};
-
+}
 
 // captures user answer
 function answerButtonClick(event) {
