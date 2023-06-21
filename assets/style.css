@@ -105,4 +105,12 @@ button:active {
     background-color: black;
     color: white;
     border: 5px solid white;
-  }
+}
+
+.high-scores-container {
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
