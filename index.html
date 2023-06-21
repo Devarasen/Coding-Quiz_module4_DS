@@ -13,7 +13,9 @@
     <body>
         <nav>
             <button class = "high-scores">View High Scores</button>
-            <h2>Timer: <span class = "timer">3</span></h2>
+            <h2>Correct: <span class = "correct">0</span> </h2>
+            <h2>Wrong: <span class = "wrong">0</span> </h2>
+            <h2>Timer: <span class = "timer">20</span></h2>
         </nav>
         <main>
             <section class = "intro">
@@ -23,9 +25,14 @@
                 <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answeres will penalize your score/time by 10 seconds</p>
                 <button class = "start-button">Start Quiz</button>
             </section>
-            <section>
+            <section class = "card">
                 <h3 class="question"></h3>
-                <ul class="options"></ul>
+                <ul class="options">
+                    <button class = "btn"></button>
+                    <button class = "btn"></button>
+                    <button class = "btn"></button>
+                    <button class = "btn"></button>
+                </ul>
             </section>
         </main>
         <script src="./assets/script.js"></script>
