@@ -9,7 +9,8 @@ Coding Quiz Module 4 Assignment - Devarasen Sundarasan
 This coding quiz will ask the user 7 questions within the time limit of 60 seconds. 
 Users scores will then be logged and stored in the high scores list.
 
-
+Deployed URL: https://devarasen.github.io/Coding-Quiz_module4_DS/
+Repo URL: https://github.com/Devarasen/Coding-Quiz_module4_DS
 
 ## Usage
 
