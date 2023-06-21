@@ -114,7 +114,7 @@ startButton.addEventListener("click", function() {
 // create a timer for the quiz
 function startTimer() {
     
-    timerCount = 03;
+    timerCount = 60;
     timer = setInterval(function() {
         timerCount--;
         timerEl.textContent = timerCount
@@ -207,7 +207,11 @@ function endQuiz() {
 function saveHighScore() {
     let highScore = JSON.parse(localStorage.getItem('highScore')) || [];
 
-    var playerName = prompt("Enter your name");
+    let playerName = '';
+    while (!playerName) {
+    playerName = prompt("Enter name and proceed to high score page - 'Cannot be left blank' ");
+    }
+    
     var score = {name: playerName, correctAnswer: correctAnswer};
 
     highScore.push(score);
@@ -217,20 +221,32 @@ function saveHighScore() {
     localStorage.setItem('highScore', JSON.stringify(highScore));
 }
 
-// 
+// displays high scores at end of quiz or when high score button is clicked
 function displayHighScores() {
+
+    highScoreButton.addEventListener("click", function() {
+        location.reload();
+    });
+
+    highScoreButton.textContent = "click to return";
 
     var highScores = JSON.parse(localStorage.getItem('highScore')) || [];
     cardEl.style.display = "none";
     introEl.style.display = "none";
+
+    var cardItemHeader = document.createElement('h3');
+    cardItemHeader.classList.add('card-item-header');
+    cardItemHeader.textContent = "HIGH SCORES";
+    mainEl.appendChild(cardItemHeader);
+
      
     // Create a new card element for each high score
     highScores.forEach(function(score, index) {
+
       var cardItem = document.createElement('div');
       cardItem.classList.add('card-item');
-      cardItem.textContent = (index + 1) + '. ' + score.name + ' - ' + score.correctAnswer;
-      mainEl.appendChild(cardItem);
-    });
 
-   
+      cardItem.textContent = (index + 1) + '. ' + score.name + ' - ' + score.correctAnswer;
+      mainEl.appendChild(cardItem);   
+    });       
 }
