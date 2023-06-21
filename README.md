@@ -16,6 +16,7 @@ Repo URL: https://github.com/Devarasen/Coding-Quiz_module4_DS
 ## Usage
 
 Follow instructions:
+
 a. Click start quiz and question will appear.
 
 b. Answer question and the next question will be presented. A total of 7 questions will be presented.
