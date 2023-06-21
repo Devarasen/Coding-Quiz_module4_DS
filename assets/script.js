@@ -107,7 +107,7 @@ highScoreButton.addEventListener("click", displayHighScores);
 // starts quiz and timer
 startButton.addEventListener("click", function() {
     startTimer(); 
-    startQuiz();   
+    displayQuestion();   
 });
 
 
@@ -127,11 +127,6 @@ function startTimer() {
 }
 
 // renders Quiz
-function startQuiz() {    
-    displayQuestion();          
-}
-
-//displays questions
 function displayQuestion() {
     introEl.style.display = "none";
     cardEl.style.display = "block";
@@ -207,8 +202,8 @@ function endQuiz() {
 function saveHighScore() {
     let highScore = JSON.parse(localStorage.getItem('highScore')) || [];
 
-    let playerName = '';
-    while (!playerName) {
+    var playerName;
+    while (!playerName || playerName.trim() === "") {
     playerName = prompt("Enter name and proceed to high score page - 'Cannot be left blank' ");
     }
     
@@ -240,7 +235,6 @@ function displayHighScores() {
     mainEl.appendChild(cardItemHeader);
 
      
-    // Create a new card element for each high score
     highScores.forEach(function(score, index) {
 
       var cardItem = document.createElement('div');
